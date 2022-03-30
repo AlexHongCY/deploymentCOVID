@@ -15,7 +15,7 @@ class Covid extends React.Component {
     if(response.status === 200){
       console.log(response.data.result)
       this.setState(state=>{
-        state.forecast=response.data.result.fields;
+        state.forecast=response.data.result.records;
         return state;
       })
     }
